@@ -11,15 +11,25 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <xmlSuite>runSuites/regression_run.xml</xmlSuite>
+        <extentReportVersion>5.1.2</extentReportVersion>
+        <testNGVersion>7.10.1</testNGVersion>
+        <commonIOVersion>2.17.0</commonIOVersion>
         <junitVersion>4.13.2</junitVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>4.26.0</selenium.version>
+        <jacksonDatabind>2.17.2</jacksonDatabind>
+        <glassfishVersion>4.0.5</glassfishVersion>
         <testng.version>7.10.2</testng.version>
         <opencsv.version>5.9</opencsv.version>
         <mysql.version>8.0.33</mysql.version>
         <jackson.version>2.17.2</jackson.version>
         <commons.io.version>2.17.0</commons.io.version>
         <xmlSuite>runSuites/regression_run.xml</xmlSuite>
+        <jakartaXMLBind>4.0.2</jakartaXMLBind>
+        <javaxXML>2.3.1</javaxXML>
+        <jaxbImpl>4.0.5</jaxbImpl>
+        <mySQLConnector>8.0.33</mySQLConnector>
     </properties>
 
     <dependencies>
@@ -48,6 +58,12 @@
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
             <version>${opencsv.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>${jakartaXMLBind}</version>
         </dependency>
 
         <dependency>

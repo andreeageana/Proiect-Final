@@ -36,6 +36,7 @@ public class RegistrationTest extends BaseTest {
     }
 
     private void setUP() {
+
     }
 
     @Test(dataProvider = "emailFormatDataProvider", dataProviderClass = data.RegistrationDataProvider.class)

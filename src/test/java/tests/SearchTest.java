@@ -18,6 +18,7 @@ public class SearchTest extends BaseTest {
     }
 
     private void setUP() {
+
     }
 
     @Test(dataProvider = "searchInvalidDataProvider", dataProviderClass = data.SearchDataProvider.class)
