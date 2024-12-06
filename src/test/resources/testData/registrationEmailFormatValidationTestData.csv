@@ -1,0 +1,7 @@
+lastname,firstname,phone,email,address,city,county,password,confirmPassword,registerError
+Popescu,Ana,0735554554,@email.com,Magurele 12,Craiova,Dolj,jUioasRh36T%,jUioasRh36T%,Please enter a part followed by '@'. '@email.com' is incomplete.
+Popescu,Ana,0735554554,ana@.com,Magurele 12,Craiova,Dolj,jUioasRh36T%,jUioasRh36T%,'.' is used at a wrong position in '.com'.
+Popescu,Ana,0735554554,ana@email.,Magurele 12,Craiova,Dolj,jUioasRh36T%,jUioasRh36T%,'.' is used at a wrong position in 'email.'.
+Popescu,Ana,0735554554,anaemail.com,Magurele 12,Craiova,Dolj,jUioasRh36T%,jUioasRh36T%,Please include an '@' in the email address. 'anaemail.com' is missing an '@'.
+Popescu,Ana,0735554554,ana@emailcom,Magurele 12,Craiova,Dolj,jUioasRh36T%,jUioasRh36T%,Please include an '.' in the email address. 'ana@emailcom' is missing an '.'.
+Popescu,Ana,0735554554,ana!/?#@email.com,Magurele 12,Craiova,Dolj,jUioasRh36T%,jUioasRh36T%,Please enter a valid email address.

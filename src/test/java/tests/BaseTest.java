@@ -1,0 +1,72 @@
+package tests;
+
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import pages.BasePage;
+import utils.BrowserUtils;
+
+public class BaseTest {
+    protected WebDriver driver;
+    protected String baseURL;
+    protected BasePage basePage;
+    protected Alert alert;
+
+    public void getBrowser(String browserName) {
+        driver = BrowserUtils.getDriver(browserName);
+    }
+
+    public void getBrowser() {
+        String browserName = "chrome";
+        System.out.println("Load browser type: " + browserName);
+        driver = BrowserUtils.getDriver(browserName);
+        basePage = new BasePage(driver);
+    }
+
+
+    public void setUp() {
+        getBaseURL();
+        getBrowser();
+    }
+
+    private void closeBrowserAtEnd() {
+        if (driver != null) {
+            System.out.println("Close browser at the end of test");
+            driver.quit();
+        }
+    }
+
+    @AfterTest
+    public void cleanUp() {
+        closeBrowserAtEnd();
+    }
+
+    @AfterMethod
+    public void cleanUpAfterMethod() {
+        closeBrowserAtEnd();
+    }
+
+
+    public void getBaseURL() {
+        baseURL = "https://shopeasy.ro/";
+    }
+
+    public void navigateToURL(String path) {
+        System.out.println("Open next url:" + baseURL + path);
+        driver.navigate().to(baseURL + path);
+    }
+
+    public void verifyAlertIsClosed() {
+        Assert.assertTrue(basePage.isAlertClosed());
+        System.out.println("Alert was closed successfully");
+    }
+
+    public void verifyAlertText(String expectedText) {
+        System.out.println("Get alert text");
+        alert = basePage.waitUntilAlertIsPresent();
+        System.out.println(basePage.getAlertText(alert));
+        Assert.assertEquals(basePage.getAlertText(alert), expectedText);
+    }
+}

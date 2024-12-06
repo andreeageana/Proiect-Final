@@ -1,0 +1,14 @@
+<registrationModel>
+    <registrationDetailsModel>
+        <lastname>Margineanu</lastname>
+        <firstname>Anca</firstname>
+        <phone>0777123456</phone>
+        <email>anca@email.com</email>
+        <address>Azaleelor 75</address>
+        <city>Timisoara</city>
+        <county>Timis</county>
+        <password>parolaMea12!</password>
+        <confirmPassword>parolaMea12!</confirmPassword>
+    </registrationDetailsModel>
+    <registerError></registerError>
+</registrationModel>

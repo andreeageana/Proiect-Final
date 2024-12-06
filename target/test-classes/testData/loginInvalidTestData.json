@@ -1,0 +1,42 @@
+[
+  {
+    "account": {
+      "email": "email@email.com",
+      "password": "Aasdfgh23!"
+    },
+    "loginError": "action,login,error",
+    "validationMessage": ""
+  },
+  {
+    "account": {
+      "email": "modol.andreea23@gmail.com",
+      "password": "Tessst23!"
+    },
+    "loginError": "action,login,error",
+    "validationMessage": ""
+  },
+  {
+    "account": {
+      "email": "modol.andreea23@gmail.com",
+      "password": ""
+    },
+    "loginError": "",
+    "validationMessage": "Please fill out this field."
+  },
+  {
+    "account": {
+      "email": "",
+      "password": "Tessst23!"
+    },
+    "loginError": "",
+    "validationMessage": "Please fill out this field."
+  },
+  {
+    "account": {
+      "email": "",
+      "password": ""
+    },
+    "loginError": "",
+    "validationMessage": "Please fill out this field."
+  }
+]
