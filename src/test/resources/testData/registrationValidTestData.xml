@@ -1,14 +1,14 @@
 <registrationModel>
     <registrationDetailsModel>
-        <lastname>Margineanu</lastname>
+        <lastname>Maaria</lastname>
         <firstname>Anca</firstname>
-        <phone>0777123456</phone>
-        <email>anca@email.com</email>
+        <phone>0712363456</phone>
+        <email>andreea@email.com</email>
         <address>Azaleelor 75</address>
-        <city>Timisoara</city>
+        <city>Cluj</city>
         <county>Timis</county>
-        <password>parolaMea12!</password>
-        <confirmPassword>parolaMea12!</confirmPassword>
+        <password>parolaMea223!</password>
+        <confirmPassword>parolaMea223!</confirmPassword>
     </registrationDetailsModel>
     <registerError></registerError>
 </registrationModel>

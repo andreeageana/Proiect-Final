@@ -17,7 +17,7 @@
         <commonIOVersion>2.17.0</commonIOVersion>
         <junitVersion>4.13.2</junitVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.26.0</selenium.version>
+        <selenium.version>4.27.0</selenium.version>
         <jacksonDatabind>2.17.2</jacksonDatabind>
         <glassfishVersion>4.0.5</glassfishVersion>
         <testng.version>7.10.2</testng.version>
@@ -41,10 +41,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
+            <version>4.27.0</version>
         </dependency>
 
         <dependency>
