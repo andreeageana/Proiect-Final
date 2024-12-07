@@ -11,12 +11,9 @@ public class LoginTest extends BaseTest {
     public void testLogin(String username, String password, String browser) {
         getBrowser(browser);
         getBaseURL();
-
         navigateToURL("/my-account/?action=register");
-
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login(username, password);
-
         System.out.println("Verify login successful");
         Assert.assertTrue(loginPage.verifyLoginSuccessful(username));
     }

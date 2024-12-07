@@ -62,7 +62,7 @@ public class SearchPage extends BasePage {
     }
 
     public boolean verifyNegativeSearchMessage(String searchPhrase) {
-        String defaultURL = "https://digitalvision.ro/";
+        String defaultURL = "https://shopeasy.ro";
         if (searchPhrase.isEmpty()) {
             String currentURL = driver.getCurrentUrl();
             defaultURL.equals(currentURL);

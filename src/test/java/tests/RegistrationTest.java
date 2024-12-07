@@ -42,7 +42,7 @@ public class RegistrationTest extends BaseTest {
     @Test(dataProvider = "emailFormatDataProvider", dataProviderClass = data.RegistrationDataProvider.class)
     public void verifyEmailFormat(RegistrationModel registrationModel) {
         setUP();
-        navigateToURL("cont-nou");
+        navigateToURL("My account");
         RegistrationPage registrationPage = new RegistrationPage(driver);
         System.out.println(registrationModel);
 
@@ -58,7 +58,7 @@ public class RegistrationTest extends BaseTest {
 
     private void registerWithRegisterModel(RegistrationModel registrationModel) {
         setUP();
-        navigateToURL("cont-nou");
+        navigateToURL("My account");
         RegistrationPage registrationPage = new RegistrationPage(driver);
         System.out.println(registrationModel);
         RegistrationDetailsModel registrationForm = registrationModel.getRegistrationDetailsModel();
